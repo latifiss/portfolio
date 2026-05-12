@@ -5,7 +5,7 @@
 :root {
   --sans: 'Segoe UI', 'Comic Neue', 'Chalkboard SE', 'Marker Felt', 'Caveat', 'Courier Prime', monospace;
   --heading: 'Courier Prime', 'Comic Neue', 'Segoe UI', monospace;
-  --text: #2c2418;
+  --text: #000000;
 }
 
 html,
