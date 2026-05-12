@@ -1,0 +1,82 @@
+.dev-hero {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-center {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-center-image {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+.hero-sticker {
+  position: absolute;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.15));
+}
+
+.sticker-image {
+  width: 70px;
+  height: auto;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .dev-hero {
+    min-height: 380px;
+  }
+  
+  .hero-container {
+    height: 380px;
+  }
+  
+  .hero-center-image {
+    max-width: 280px;
+  }
+  
+  .sticker-image {
+    width: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dev-hero {
+    min-height: 300px;
+  }
+  
+  .hero-container {
+    height: 400px;
+    margin-top: 40px;
+  }
+  
+  .hero-center-image {
+    max-width: 200px;
+  }
+  
+  .sticker-image {
+    width: 35px;
+  }
+}

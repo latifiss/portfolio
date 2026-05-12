@@ -1,0 +1,146 @@
+.reusable-tabs {
+  position: relative;
+  z-index: 20;
+  display: inline-block;
+  pointer-events: auto;
+}
+
+.tab-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  background: transparent;
+  min-width: 280px;
+  height: 56px;
+}
+
+.tab-grid-cell {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 6px 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  min-width: 120px;
+  overflow: hidden;
+  z-index: 30;
+  pointer-events: auto;
+}
+
+.tab-grid-cell.active {
+  position: relative;
+}
+
+.pencil-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.tab-sticker {
+  position: relative;
+  z-index: 2;
+  width: auto;
+  height: 34px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.tab-grid-cell:hover .tab-sticker {
+  transform: scale(1.05);
+}
+
+.tab-grid-line {
+  position: absolute;
+  pointer-events: none;
+  z-index: 15;
+}
+
+.tab-grid-line-top {
+  top: -2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 6px;
+}
+
+.tab-grid-line-bottom {
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 6px;
+}
+
+.tab-grid-line-left {
+  left: -2px;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  height: 100%;
+}
+
+.tab-grid-line-right {
+  right: -2px;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  height: 100%;
+}
+
+.tab-grid-line-middle {
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.tab-grid-line svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .tab-grid {
+    min-width: 180px;
+    height: 56px;
+  }
+  
+  .tab-grid-cell {
+    padding: 6px 16px;
+    min-width: 90px;
+  }
+  
+  .tab-sticker {
+    width: auto;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-grid {
+    min-width: 150px;
+    height: 52px;
+  }
+  
+  .tab-grid-cell {
+    padding: 6px 12px;
+    min-width: 95px;
+  }
+  
+  .tab-sticker {
+    width: auto;
+    height: 28px;
+  }
+}

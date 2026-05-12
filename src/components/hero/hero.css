@@ -1,0 +1,65 @@
+.design-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-center {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-center-image {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+.hero-sticker {
+  position: absolute;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.15));
+}
+
+.sticker-image {
+  width: 70px;
+  height: auto;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .hero-center-image {
+    max-width: 350px;
+  }
+  
+  .sticker-image {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-center-image {
+    max-width: 250px;
+  }
+  
+  .sticker-image {
+    width: 40px;
+  }
+}

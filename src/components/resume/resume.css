@@ -1,0 +1,235 @@
+.resume-container {
+  margin: 50px 0 40px;
+  position: relative;
+}
+
+.resume-wrapper {
+  position: relative;
+}
+
+.resume-title-wrapper {
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.resume-handwritten-title {
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  font-family: 'Courier Prime', 'Comic Neue', monospace;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+  color: var(--text);
+  letter-spacing: -0.3px;
+}
+
+.resume-underlines {
+  position: relative;
+  margin-top: -8px;
+}
+
+.resume-underline-svg {
+  width: 100%;
+  height: 14px;
+}
+
+.resume-grid {
+  position: relative;
+  background: transparent;
+  min-height: 200px;
+  overflow: hidden;
+}
+
+.resume-borders {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.resume-border {
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.resume-border-top {
+  top: -2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 6px;
+}
+
+.resume-border-bottom {
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 6px;
+}
+
+.resume-border-left {
+  left: -2px;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  height: 100%;
+}
+
+.resume-border-right {
+  right: -2px;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  height: 100%;
+}
+
+.resume-border svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.resume-content {
+  padding: 32px 28px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: transparent;
+}
+
+.resume-summary {
+  font-size: 0.95rem;
+  font-family: var(--sans);
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.resume-summary p {
+  margin: 0;
+}
+
+.resume-link-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.resume-download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 28px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-family: var(--heading);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  position: relative;
+}
+
+.resume-download-link::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 0.8px solid rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  transform: rotate(-0.3deg);
+  pointer-events: none;
+}
+
+.resume-download-link::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  border-radius: 40px;
+  transform: rotate(0.2deg);
+  pointer-events: none;
+}
+
+.resume-download-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(219, 64, 52, 0.3);
+}
+
+.resume-download-link:hover .resume-link-text {
+  color: #db4034;
+}
+
+.resume-link-icon {
+  font-size: 1.2rem;
+}
+
+.resume-link-text {
+  transition: color 0.2s ease;
+}
+
+.resume-link-arrow {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.resume-download-link:hover .resume-link-arrow {
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    margin: 30px 0 30px;
+  }
+  
+  .resume-content {
+    padding: 24px 20px;
+  }
+  
+  .resume-summary {
+    font-size: 0.85rem;
+  }
+  
+  .resume-download-link {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+  
+  .resume-link-icon {
+    font-size: 1rem;
+  }
+  
+  .resume-link-arrow {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-content {
+    padding: 20px 16px;
+  }
+  
+  .resume-summary {
+    font-size: 0.8rem;
+  }
+  
+  .resume-download-link {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+}
