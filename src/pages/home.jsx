@@ -12,7 +12,6 @@ import Resume from '../components/resume/resume';
 function App() {
   const [activeRole, setActiveRole] = useState('designer');
 
-  // Tab configuration
   const tabs = [
     { id: 'designer', label: 'Designer', icon: '🎨' },
     { id: 'developer', label: 'Developer', icon: '💻' },
@@ -64,7 +63,6 @@ function App() {
     { src: '/assets/tools/dev/Vector.png', name: 'CSS' },
   ];
 
-  // Designer projects data
   const designerProjects = [
     {
       id: 1,
@@ -181,7 +179,6 @@ function App() {
     },
   ];
 
-  // Developer projects data
   const developerProjects = [
     {
       id: 1,
@@ -324,7 +321,6 @@ function App() {
 
   return (
     <>
-      {/* SVG Filters for paper texture */}
       <svg width="0" height="0" style={{ position: 'absolute' }}>
         <filter id="paper-filter" x="0%" y="0%" width="100%" height="100%">
           <feTurbulence
@@ -362,7 +358,6 @@ function App() {
           <div className="hole"></div>
         </div>
 
-        {/* Header Component with Logo and Tabs */}
         <Header
           tabs={tabs}
           activeTab={activeRole}
@@ -376,24 +371,22 @@ function App() {
         {activeRole === 'designer' ? (
           <Resume
             role="designer"
-            resumeLink="https://drive.google.com/file/d/1NSZWWrbzVtYPlllmebpmzQDTukVuifCK/preview"
+            resumeLink="https://drive.google.com/file/d/1b0llK6qjwydN-xVJ4-qtW23TMRT6RbPD/preview"
             summary="Product designer with 5+ years of experience creating user-centered digital products. Passionate about design systems, accessibility, and creating seamless user experiences across web and mobile platforms."
           />
         ) : (
           <Resume
             role="developer"
-            resumeLink="https://drive.google.com/file/d/1NSZWWrbzVtYPlllmebpmzQDTukVuifCK/preview"
+            resumeLink="https://drive.google.com/file/d/1b0llK6qjwydN-xVJ4-qtW23TMRT6RbPD/preview"
             summary="Fullstack developer with 5+ years of experience creating user-centered digital products. Passionate about design systems, accessibility, and creating seamless user experiences across web and mobile platforms."
           />
         )}
-
         <header>
           <h1>Project Workbook</h1>
           <div className="date">April 2026</div>
         </header>
 
         <div id="content">
-          {/* Table Title */}
           <div className="table-title-wrapper">
             <h2 className="handwritten-title">
               {activeRole === 'designer' ? 'My Projects' : 'My Projects'}
@@ -419,17 +412,14 @@ function App() {
             </div>
           </div>
 
-          {/* Projects Grid Component */}
           {activeRole === 'designer' ? (
             <ProjectsGrid projects={currentProjects} />
           ) : (
             <DevProject projects={currentProjects} />
           )}
-          {/* <ProjectsGrid projects={currentProjects} /> */}
 
           <Contact />
 
-          {/* Hand-drawn footer note */}
           <div className="notebook-footer">
             <svg className="footer-squiggle" viewBox="0 0 300 20">
               <path
