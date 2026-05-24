@@ -1,3 +1,4 @@
+import AltHeader from '../../components/altHeader/altHeader';
 import './pinkFinance.css';
 
 const PinkFinance = () => {
@@ -209,6 +210,8 @@ const PinkFinance = () => {
         <div className="hole"></div>
         <div className="hole"></div>
       </div>
+
+      <AltHeader />
 
       <div className="case-study-container">
         <div className="case-study-hero">

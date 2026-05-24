@@ -1,3 +1,4 @@
+import AltHeader from '../../components/altHeader/altHeader';
 import './erpDesignSystem.css';
 
 const ERPDesignSystem = () => {
@@ -433,6 +434,8 @@ const ERPDesignSystem = () => {
         <div className="hole"></div>
         <div className="hole"></div>
       </div>
+
+      <AltHeader />
 
       <div className="case-study-container">
         <div className="case-study-hero">

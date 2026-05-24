@@ -1,3 +1,4 @@
+import AltHeader from '../../components/altHeader/altHeader';
 import './airbnbCaseStudy.css';
 
 const AirbnbCaseStudy = () => {
@@ -73,6 +74,8 @@ const AirbnbCaseStudy = () => {
         <div className="hole"></div>
         <div className="hole"></div>
       </div>
+
+      <AltHeader />
 
       <div className="case-study-container">
         <div className="case-study-hero">

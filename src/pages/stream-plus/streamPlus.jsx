@@ -1,3 +1,4 @@
+import AltHeader from '../../components/altHeader/altHeader';
 import './steamPlus.css';
 
 const StreamPlus = () => {
@@ -182,6 +183,8 @@ const StreamPlus = () => {
         <div className="hole"></div>
         <div className="hole"></div>
       </div>
+
+      <AltHeader />
 
       <div className="case-study-container">
         <div className="case-study-hero">
