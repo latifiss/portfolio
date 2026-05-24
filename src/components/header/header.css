@@ -82,3 +82,60 @@
     width: calc(100% - 30px);
   }
 }
+
+.skill-indicator {
+  position: absolute;
+  bottom: -60px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  pointer-events: none;
+  z-index: 30;
+}
+
+.arrow-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.indicator-arrow {
+  width: 60px;
+  height: auto;
+  transform: rotate(-20deg) scaleX(-1);
+}
+
+.indicator-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  white-space: nowrap;
+  font-family: inherit;
+  margin-top: 40px;
+  margin-left: -16px;
+  
+  background: #FFD700;
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: 2px solid #FF8C00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.5px;
+  display: inline-block;
+  transform: rotate(-3deg);
+}
+
+@media (max-width: 768px) {
+  .skill-indicator {
+    bottom: -50px;
+    right: 10px;
+  }
+  
+  .indicator-arrow {
+    width: 45px;
+  }
+  
+  .indicator-text {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+}
