@@ -657,7 +657,7 @@ const PinkFinance = () => {
 
             <div className="figma-button-wrapper">
               <a
-                href="https://www.figma.com/design/Yu3INfc1Ce6fqKjmnFCAv8/Pink-Finance?node-id=70-10996&t=J8D5Uq8O4ewwWhUx-1"
+                href="https://www.figma.com/community/file/1640513132675088852/pink-finance-finance-trading-app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="figma-hand-drawn-btn"

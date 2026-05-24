@@ -623,7 +623,7 @@ const StreamPlus = () => {
             </div>
             <div className="figma-button-wrapper">
               <a
-                href="https://www.figma.com/design/2FCS8OaVxDGESWMgWNK3Fp/StreamPlus-App?node-id=6009-26382&t=Ewkxc2ZqhPNoWJYk-1"
+                href="https://www.figma.com/community/file/1561063287782593720/streamplus-app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="figma-hand-drawn-btn"

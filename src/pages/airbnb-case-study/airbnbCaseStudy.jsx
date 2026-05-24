@@ -1031,7 +1031,7 @@ const AirbnbCaseStudy = () => {
             </div>
             <div className="figma-button-wrapper">
               <a
-                href="https://www.figma.com/design/10tlSSiJyVPr2Oaa6mIBoG/AIRBNB?node-id=2152-4035&t=NLSQeoVJ1vRLmoGu-1"
+                href="https://www.figma.com/community/file/1561084849603424555/airbnb"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="figma-hand-drawn-btn"

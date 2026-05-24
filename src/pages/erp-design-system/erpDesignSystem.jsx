@@ -1016,7 +1016,7 @@ const ERPDesignSystem = () => {
             </div>
             <div className="figma-button-wrapper">
               <a
-                href="https://www.figma.com/design/jawrp59GM1oAzwxqDOH58B/ERP-Design-System?node-id=136-4260&t=DM0DmpcHJnVBFYOr-1"
+                href="https://www.figma.com/community/file/1561076382195958018/erp-design-system"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="figma-hand-drawn-btn"
