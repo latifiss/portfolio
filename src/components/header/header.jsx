@@ -32,7 +32,7 @@ const Header = ({ tabs, activeTab, onTabChange }) => {
             </defs>
           </svg>
         </div>
-        <span className="indicator-text">switch between my skill</span>
+        <span className="indicator-text">switch between my skills</span>
       </div>
     </div>
   );
