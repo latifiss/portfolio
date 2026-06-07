@@ -10,11 +10,11 @@ import DevProject from '../components/projects/devProjects';
 import Resume from '../components/resume/resume';
 
 function App() {
-  const [activeRole, setActiveRole] = useState('designer');
+  const [activeRole, setActiveRole] = useState('developer');
 
   const tabs = [
-    { id: 'designer', label: 'Designer', icon: '🎨' },
     { id: 'developer', label: 'Developer', icon: '💻' },
+    { id: 'designer', label: 'Designer', icon: '🎨' },
   ];
 
   const designerSkillsList = [

@@ -85,8 +85,8 @@
 
 .skill-indicator {
   position: absolute;
-  bottom: -60px;
-  right: 20px;
+  bottom: -40px;
+  right: 160px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -102,16 +102,17 @@
 .indicator-arrow {
   width: 60px;
   height: auto;
-  transform: rotate(-20deg) scaleX(-1);
+  transform: rotate(70deg) scaleX(-1);
 }
 
 .indicator-text {
+  position: absolute;
   font-size: 16px;
   font-weight: 500;
   color: #000;
   white-space: nowrap;
   font-family: inherit;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-left: -16px;
   
   background: #FFD700;
@@ -122,12 +123,13 @@
   letter-spacing: 0.5px;
   display: inline-block;
   transform: rotate(-3deg);
+  z-index: 30;
 }
 
 @media (max-width: 768px) {
   .skill-indicator {
-    bottom: -50px;
-    right: 10px;
+    bottom: -30px;
+    right: 120px;
   }
   
   .indicator-arrow {
@@ -137,5 +139,21 @@
   .indicator-text {
     font-size: 10px;
     padding: 3px 8px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skill-indicator {
+    bottom: -35px;
+    right: 160px;
+  }
+  
+  .indicator-arrow {
+    width: 50px;
+  }
+  
+  .indicator-text {
+    font-size: 12px;
+    padding: 4px 10px;
   }
 }
