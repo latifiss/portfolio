@@ -372,13 +372,13 @@ function App() {
           <Resume
             role="designer"
             resumeLink="https://drive.google.com/file/d/1b0llK6qjwydN-xVJ4-qtW23TMRT6RbPD/preview"
-            summary="Product designer and fullstack developer with 5+ years of experience creating user-centered digital products. Passionate about design systems, accessibility, and creating seamless user experiences across web and mobile platforms."
+            summary="Fullstack developer and Product designer (UI/UX) with 5+ years of experience creating user-centered digital products. Passionate about design systems, accessibility, and creating seamless user experiences across web and mobile platforms."
           />
         ) : (
           <Resume
             role="developer"
             resumeLink="https://drive.google.com/file/d/1b0llK6qjwydN-xVJ4-qtW23TMRT6RbPD/preview"
-            summary="Product designer and fullstack developer with 5+ years of experience creating user-centered digital products. Passionate about design systems, accessibility, and creating seamless user experiences across web and mobile platforms."
+            summary="Fullstack developer and Product designer (UI/UX) with 5+ years of experience creating user-centered digital products. Passionate about design systems, accessibility, and creating seamless user experiences across web and mobile platforms."
           />
         )}
         <header>
